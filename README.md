@@ -1,2 +1,2 @@
-# angular_demo
+# demo_angular
 Demo Angular Application
