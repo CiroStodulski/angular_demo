@@ -11,13 +11,12 @@ export class AppComponent {
 
     constructor(http: Http) {
 
-        http.get('/v1/dados')
-            .subscribe(res => {
-                this.dados = res.json();
-                // criar serviço no seridor
-                // this.dados = [{teste:'teste'}]
-                // console.log(this.dados)
-            });
+        http.get('/dado')
+        .map(res => res.json())
+        .subscribe(res => this.dados = res
+            , err => console.log(err));
+          
+           
     }
 }
 

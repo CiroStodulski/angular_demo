@@ -13,13 +13,9 @@ var http_1 = require('@angular/http');
 var AppComponent = (function () {
     function AppComponent(http) {
         var _this = this;
-        http.get('/v1/dados')
-            .subscribe(function (res) {
-            _this.dados = res.json();
-            // criar serviço no seridor
-            // this.dados = [{teste:'teste'}]
-            // console.log(this.dados)
-        });
+        http.get('/dado')
+            .map(function (res) { return res.json(); })
+            .subscribe(function (res) { return _this.dados = res; }, function (err) { return console.log(err); });
     }
     AppComponent = __decorate([
         core_1.Component({

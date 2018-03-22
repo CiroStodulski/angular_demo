@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var http_1 = require('@angular/http');
+require('rxjs/add/operator/map');
 var AppModule = (function () {
     function AppModule() {
     }
