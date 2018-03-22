@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 consign()
-    .include('app')
+    .include('app/daos')
     .into(app);
 
 module.exports = app;
