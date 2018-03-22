@@ -12,10 +12,6 @@ var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 var AppComponent = (function () {
     function AppComponent(http) {
-        var _this = this;
-        http.get('dado')
-            .map(function (res) { return res.json(); })
-            .subscribe(function (res) { return _this.dados = res; }, function (err) { return console.log(err); });
     }
     AppComponent = __decorate([
         core_1.Component({

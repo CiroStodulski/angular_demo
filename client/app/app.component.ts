@@ -11,10 +11,7 @@ export class AppComponent {
 
     constructor(http: Http) {
 
-        http.get('dado')
-            .map(res => res.json())
-            .subscribe(res => this.dados = res
-                , err => console.log(err));
+  
     }
 }
 
