@@ -10,7 +10,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 consign()
-    .include('app')
+    .include('app/daos')
+    .then('app/controllers')
+    .then('app/routes')
     .into(app);
 
 module.exports = app;
