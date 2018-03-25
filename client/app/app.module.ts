@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map'
+import { PainelComponent } from './painel/painel.component';
 @NgModule({
-  imports: [BrowserModule, HttpModule],
+  imports: [BrowserModule, HttpModule, PainelComponent],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
 })

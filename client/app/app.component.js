@@ -16,7 +16,6 @@ var AppComponent = (function () {
         http.get('/dado')
             .map(function (res) { return res.json(); })
             .subscribe(function (res) { return _this.dados = res; }, function (err) { return console.log(err); });
-
     }
     AppComponent = __decorate([
         core_1.Component({
