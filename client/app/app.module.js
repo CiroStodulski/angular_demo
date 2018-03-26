@@ -13,14 +13,15 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/map');
-var painel_component_1 = require('./painel/painel.component');
+var painel_module_1 = require('./painel/painel.module');
+var cadastro_component_1 = require('./cadastro/cadastro.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, painel_component_1.PainelComponent],
-            declarations: [app_component_1.AppComponent],
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, painel_module_1.PainelModule],
+            declarations: [app_component_1.AppComponent, cadastro_component_1.CadastroComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
