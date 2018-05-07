@@ -14,7 +14,6 @@ class Dado {
 
 
     load(callback) {
-
         callback(null, this._dados);
     }
 

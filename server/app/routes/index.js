@@ -4,7 +4,7 @@ module.exports = app => {
 
 
     app.all('/*', (req, res) => {
-        res.sendFile(path.join(app.get('clientPath'), 'index.html'));
+        res.sendFile(path.join(app.get('clientPath'), '/src/index.html'));
     });
 
 
